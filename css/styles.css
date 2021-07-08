@@ -68,7 +68,7 @@ header, main, footer {
 }
 
 .middle-container {
-  padding-top: 1%;
+  padding-top: 3.5%;
   text-align: center;
   line-height: 200%;
 }
@@ -80,6 +80,11 @@ header, main, footer {
 
 .middle-container h2 {
   color: #73a1fb;
+}
+
+.middle-container p {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .middle-container img {

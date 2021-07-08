@@ -76,12 +76,17 @@ header, main, footer {
     padding-left: rem(50);
     padding-right: rem(50);
   }
-  padding-top: 1%;
+  padding-top: 3.5%;
   text-align: center;
   line-height: 200%;
 
   h2 {
     color: #73a1fb;
+  }
+
+  p {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   img {
