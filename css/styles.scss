@@ -1,0 +1,132 @@
+@function rem($rawDimension) {
+  $rem: $rawDimension / 16;
+  @return $rem * 1rem;
+}
+
+$background-color: #000000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $background-color;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: rem(40);
+}
+
+h2 {
+  font-size: rem(30);
+}
+
+p {
+  font-size: rem(20);
+}
+
+section {
+  height: 100vh;
+  width: auto;
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow: auto;
+  height: 100vh;
+}
+
+.top-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+  .name,
+  .study {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .study {
+    top: 50%;
+  }
+
+  .image {
+    width: 100%;
+    height: 120% auto;
+  }
+}
+
+.middle-container {
+  * {
+    padding-left: rem(50);
+    padding-right: rem(50);
+  }
+  padding-top: 1%;
+  text-align: center;
+
+  h2 {
+    color: #73a1fb;
+  }
+
+  img {
+    min-width: rem(200);
+    position: relative;
+    top: rem(10);
+    width: 20%;
+    height: 100%;
+  }
+
+  .recent-skill {
+    margin-top: 3%;
+  }
+
+  .learning-skill {
+    margin-top: 3%;
+  }
+}
+
+.contact-me {
+  padding-top: 18%;
+  text-align: center;
+  position: relative;
+
+  p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+  }
+
+  .social-media ul,
+  li,
+  a {
+    display: flex;
+    margin: 0 rem(5);
+    display: block;
+    padding: 0 rem(10);
+    line-height: rem(50);
+    font-size: rem(40);
+    color: #f1f1f1;
+  }
+}
